@@ -12,7 +12,7 @@ Besides the instructions provided here, your instructor will review these proced
 4. Click the **Create Projects** button above the two swim lanes
 5. In the **Create Projects** dialog box
    1. Select **Clone from Git repo**
-   2. Enter the URL for the Git repo, in this case, https://github.com/databricks-academy/just-enough-python-for-spark.git
+   2. Enter the URL for the Git repo, in this case, https://github.com/databricks-academy/INT-JEPFS-V2-IL.git
    3. The Git provider **GitHub** should be selected for you automatically
    4. The **Project name** should default to **just-enough-python-for-spark** - feel free to rename this if you like
    5. Click the **Create** button
