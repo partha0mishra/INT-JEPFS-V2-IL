@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md-sandbox
-# MAGIC 
+# MAGIC
 # MAGIC <div style="text-align: center; line-height: 0; padding-top: 9px;">
 # MAGIC   <img src="https://databricks.com/wp-content/uploads/2018/03/db-academy-rgb-1200px.png" alt="Databricks Learning" style="width: 600px">
 # MAGIC </div>
@@ -9,7 +9,7 @@
 
 # MAGIC %md
 # MAGIC # Variables and Data Types
-# MAGIC 
+# MAGIC
 # MAGIC ## In this lesson you:
 # MAGIC * Explore fundamental Pythopn concepts
 # MAGIC * Are introduced to 4 basic data types
@@ -21,11 +21,11 @@
 
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Comments
-# MAGIC 
+# MAGIC
 # MAGIC Comments are any text that appear after the **`#`** symbol
-# MAGIC 
+# MAGIC
 # MAGIC They are often used to document various aspects of your code
-# MAGIC 
+# MAGIC
 # MAGIC They can also be used to temporary disable code (aka commenting out)
 
 # COMMAND ----------
@@ -33,7 +33,7 @@
 # This is a comment - it's here only for explination
 # Run this cell, and notice the lack of output.
 # Then uncomment the following line and run this cell again.
-# print("Hello world!")
+# print("Hello world!") add some things
 
 # COMMAND ----------
 
@@ -66,11 +66,11 @@ True # This is a boolean data type (1/0, true/false, on/off)
 # COMMAND ----------
 
 # MAGIC %md The Python interpreter will (by default) render the result of the last operation on the console.
-# MAGIC 
+# MAGIC
 # MAGIC We can see that in the rendereding of **`Out[1]: True`**, **`Out[2]: 37`**, and **`Out[3]: 3.14159265359`** above.
-# MAGIC 
+# MAGIC
 # MAGIC We can leverage that feature to perform some basic mathimatical operations on various numbers.
-# MAGIC 
+# MAGIC
 # MAGIC Give it a quick try:
 # MAGIC * Addition (**`+`**)
 # MAGIC * Subtraction (**`-`**)
@@ -86,7 +86,7 @@ True # This is a boolean data type (1/0, true/false, on/off)
 
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Strings
-# MAGIC 
+# MAGIC
 # MAGIC Strings in Python have `''` (single quotes),  `""` double quotes or tripple quotes around the content.
 
 # COMMAND ----------
@@ -105,7 +105,7 @@ with multiple lines"""
 # COMMAND ----------
 
 # MAGIC %md Like, numbers, strings can be "added" to gether.
-# MAGIC 
+# MAGIC
 # MAGIC This is more commonly referred to as concatenation.
 
 # COMMAND ----------
@@ -126,7 +126,7 @@ with multiple lines"""
 # MAGIC * Whole or integral numbers: : **`int`**
 # MAGIC * Floating-point numbers : **`float`**
 # MAGIC * Strings values: : **`str`**
-# MAGIC 
+# MAGIC
 # MAGIC By combing these basic data types (and a few to be covered later),  
 # MAGIC Python allows you to create a nearly infinite set of new types.
 
@@ -134,7 +134,7 @@ with multiple lines"""
 
 # MAGIC %md
 # MAGIC If you are not sure what "type" something is, you can employ the <a href="https://docs.python.org/3/library/functions.html#type" target="_blank">type()</a> function.
-# MAGIC 
+# MAGIC
 # MAGIC We will discuss functions in detail later, but we can easily employ simple functions like this one without fully understanding them.
 
 # COMMAND ----------
@@ -189,23 +189,23 @@ type("723")
 
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Variables
-# MAGIC 
+# MAGIC
 # MAGIC In Python, a variable holds a value.
-# MAGIC 
+# MAGIC
 # MAGIC If you plan to re-use the same value multiple times in your code, it is best to put it in a variable so you can change its value only once.
-# MAGIC 
+# MAGIC
 # MAGIC Changes to the one variable will be reflected throughout all of your code.
-# MAGIC 
+# MAGIC
 # MAGIC A few things to note on Python variable names:
 # MAGIC * A variable name must start with a letter or the underscore character
 # MAGIC * Conversely, a variable name cannot start with a number
 # MAGIC * A variable name can only contain alpha-numeric characters and underscores (a-z, A-Z, 0-9, and _ )
 # MAGIC * Variable names are case-sensitive (`age`, `Age`, and `AGE` are three different variables)
-# MAGIC 
+# MAGIC
 # MAGIC Beyond these hard requirements, additional standards are often imposed by development teams so as to produce consistent and easy to read code.
-# MAGIC 
+# MAGIC
 # MAGIC The most common standard for Python is <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP 8</a>
-# MAGIC 
+# MAGIC
 # MAGIC PEP 8's most iconic feature is the use of an underscore in function and variable names.
 
 # COMMAND ----------
@@ -228,11 +228,11 @@ _BEST_FOOD = "brussel sprouts"
 
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) The Print Function
-# MAGIC 
+# MAGIC
 # MAGIC We can force Python to render output to the console by using the <a href="https://docs.python.org/3/library/functions.html#print" target="_blank">print</a> function.
-# MAGIC 
+# MAGIC
 # MAGIC We already saw this in an earlier statement: **`print("Hello world!")`**
-# MAGIC 
+# MAGIC
 # MAGIC The **`print()`** function is one of many <a href="https://docs.python.org/3/library/functions.html" target="_blank">Built-in Functions</a> and we can employ it here to print the four variables we just declared.
 
 # COMMAND ----------
@@ -246,9 +246,9 @@ print(_BEST_FOOD)
 
 # MAGIC %md
 # MAGIC Introduced in Python 3.6, **f-strings** provide another neat feature that comes in really handy when used in conjunction with the **`print()`** function.
-# MAGIC 
+# MAGIC
 # MAGIC **f-strings** allow you to build a string composed of one or more values in an rather concise manner.
-# MAGIC 
+# MAGIC
 # MAGIC Let's take a quick look at the "hard" way to compose such a string and how **f-strings** makes this easier
 
 # COMMAND ----------
@@ -279,7 +279,7 @@ print(f"The best food ever is {best_food}, especially when it's hot outside!")
 # MAGIC %md
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Assert Statements and Type Checking
-# MAGIC 
+# MAGIC
 # MAGIC If you want to test if two things are equal, you can put them on either side of the **`==`** operator.
 
 # COMMAND ----------
@@ -298,7 +298,7 @@ print(f"The best food ever is {best_food}, especially when it's hot outside!")
 # COMMAND ----------
 
 # MAGIC %md Both the **`==`** opeartor and the **`!=`** operator return a boolean value as seen above.
-# MAGIC 
+# MAGIC
 # MAGIC Other common comparison <a href="https://docs.python.org/3/reference/lexical_analysis.html#operators" target="_blank">operators</a> include:
 # MAGIC * **`>`** greater than
 # MAGIC * **`<`** les than
@@ -314,7 +314,7 @@ print(f"The best food ever is {best_food}, especially when it's hot outside!")
 
 # MAGIC %md
 # MAGIC But what if we wanted to test if a value was of a certain type?
-# MAGIC 
+# MAGIC
 # MAGIC For this we can use the **`type()`** function and combine it with the equality operator (**`==`**) as seen here:
 
 # COMMAND ----------
@@ -337,11 +337,11 @@ type(1.32) == float
 
 # MAGIC %md
 # MAGIC What if you wanted to verify, or assert, a specific precondition?
-# MAGIC 
+# MAGIC
 # MAGIC One example might be variable's datatype, in which case execution should stop if it is of the wrong type.
-# MAGIC 
+# MAGIC
 # MAGIC That's exactly what <a href="http://docs.python.org/reference/lexical_analysis.html#keywords" target="_blank">assert</a> statement allow us to do.
-# MAGIC 
+# MAGIC
 # MAGIC If the test, or assertion, does not pass, execution stops and Python prints an error message to the console as demonstrated here:
 
 # COMMAND ----------
@@ -375,17 +375,17 @@ print("All done")
 
 # MAGIC %md
 # MAGIC ### ![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Review
-# MAGIC 
+# MAGIC
 # MAGIC **Question**: Which mathematical operators were you introduced to in this lesson?<br/>
 # MAGIC Hint: See the python docs on Lexical analysis, section 2.5, <a href="https://docs.python.org/3/reference/lexical_analysis.html#operators" target="_blank">Operators</a>
-# MAGIC 
+# MAGIC
 # MAGIC **Question**: What reserved keywords were you introduced to in this lesson?<br/>
 # MAGIC Hint: See the python docs on Lexical analysis, section 2.3.1, <a href="http://docs.python.org/reference/lexical_analysis.html#keywords" target="_blank">Keywords</a>
-# MAGIC 
+# MAGIC
 # MAGIC **Question**: How are reserved kewords like **`assert`** different from **`print`** and **`type`**?
-# MAGIC 
+# MAGIC
 # MAGIC **Question**: Which data types were you introduced to in this lesson?
-# MAGIC 
+# MAGIC
 # MAGIC **Question**: What functions were you introduced to in this lesson?<br/>
 # MAGIC Hint: See the python docs on <a href="https://docs.python.org/3/library/functions.html" target="_blank">Built-in Functions</a>
 
